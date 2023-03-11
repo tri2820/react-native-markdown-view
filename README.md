@@ -21,11 +21,7 @@ Compared to the current alternative Markdown components available for React Nati
 
 Install the node module:
 
-    yarn add react-native-markdown-view
-    
-or with npm:
-
-    npm install --save react-native-markdown-view
+    yarn add https://github.com/tri2820/react-native-markdown-view
 
 # Usage
 

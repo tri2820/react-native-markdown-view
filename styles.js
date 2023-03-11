@@ -4,7 +4,7 @@ export default Object.freeze({
     opacity: 0.8,
   },
   codeBlock: {
-    fontFamily: 'Courier',
+    // fontFamily: 'Courier',
     fontWeight: '500',
   },
   del: {
@@ -72,7 +72,7 @@ export default Object.freeze({
   },
   inlineCode: {
     backgroundColor: 'rgba(128, 128, 128, 0.25)',
-    fontFamily: 'Courier',
+    // fontFamily: 'Courier',
     fontWeight: '500',
   },
   link: {

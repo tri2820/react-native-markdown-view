@@ -67,7 +67,8 @@ declare module "react-native-markdown-view" {
     }
 
     interface MarkdownRule {
-        match?: (x: string, state: RenderState, list: string[]) => RegExp | undefined | null
+        order: number
+        match?: (x: string, state: RenderState, list: string[]) => RegExpExecArray | undefined | null
         parse?: (components: RegexComponents, parse: NestedParseFunction, state: ParseState) => any,
         render: (node: Node, output: OutputFunction, state: RenderState, style: RenderStyle) => any
     }
@@ -96,6 +97,7 @@ declare module "react-native-markdown-view" {
          * string (first and only argument).
          */
         onLinkPress?: (url: string) => void;
+        children?: React.Component;
     }
 
     /**
@@ -103,5 +105,5 @@ declare module "react-native-markdown-view" {
      */
     class MarkdownView extends React.Component<MarkdownViewProps> {}
 
-    export { MarkdownView, MarkdownStyles, MarkdownRules };
+    export { MarkdownView, MarkdownStyles, MarkdownRules, MarkdownRule };
 }
